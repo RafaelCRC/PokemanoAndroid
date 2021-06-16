@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_api_24"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_stats"
+            android:icon="@drawable/ic_baseline_analytics_24"
+            android:title="Stats" />
+        <item
+            android:id="@+id/nav_comp"
+            android:icon="@drawable/ic_baseline_compare_arrows_24"
+            android:title="Comparer" />
+        <item
+            android:id="@+id/nav_abtus"
+            android:icon="@drawable/ic_baseline_group_24"
+            android:title="About Us" />
+    </group>
+</menu>

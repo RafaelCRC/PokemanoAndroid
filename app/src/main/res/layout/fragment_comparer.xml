@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ComparerFragment"
+    android:background="#d00a0a">
+
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comlcdpoke"
+        app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="206dp"
+        android:layout_height="46dp"
+        android:translationX="-75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comlcdpoke"
+        app:srcCompat="@drawable/arrow" />
+
+    <ProgressBar
+        android:id="@+id/comphpbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/compstattext" />
+
+    <ProgressBar
+        android:id="@+id/compatkbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/comphpbar" />
+
+    <ProgressBar
+        android:id="@+id/compdfcbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/compatkbar" />
+
+    <ProgressBar
+        android:id="@+id/compspcatkbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/compdfcbar" />
+
+    <ProgressBar
+        android:id="@+id/compspcdfcbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/compspcatkbar" />
+
+    <ProgressBar
+        android:id="@+id/compspdbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/compspcdfcbar" />
+
+    <ImageView
+        android:id="@+id/compstattext"
+        android:layout_width="195dp"
+        android:layout_height="289dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="6dp"
+        android:scaleY="0.6"
+        android:src="@drawable/screenmaterialcorner"
+        android:translationY="-60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/comlcdpoke1"
+        app:layout_constraintTop_toBottomOf="@+id/dividercomp" />
+
+    <ImageView
+        android:id="@+id/comlcdpoke"
+        android:layout_width="185dp"
+        android:layout_height="317dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/display"
+        android:translationY="-24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividercomp" />
+
+    <TextView
+        android:id="@+id/comppokeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/pokefont"
+        android:text="#000"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/comlcdpoke"
+        app:layout_constraintTop_toTopOf="@+id/comlcdpoke" />
+
+    <TextView
+        android:id="@+id/comppokeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/pokefont"
+        android:text="Loading..."
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@+id/comlcdpoke"
+        app:layout_constraintTop_toTopOf="@+id/comlcdpoke" />
+
+    <TextView
+        android:id="@+id/comphptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="@font/pokefont"
+        android:text="hp"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toTopOf="@+id/compstattext" />
+
+    <TextView
+        android:id="@+id/compdfctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pokefont"
+        android:text="dfc"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/compatktext" />
+
+    <TextView
+        android:id="@+id/compspcatktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pokefont"
+        android:text="spcatk"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/compdfctext" />
+
+    <TextView
+        android:id="@+id/compspcdfctext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pokefont"
+        android:text="spcdfc"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/compspcatktext" />
+
+    <TextView
+        android:id="@+id/compspd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pokefont"
+        android:text="spd"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/compspcdfctext" />
+
+    <TextView
+        android:id="@+id/compatktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pokefont"
+        android:text="atk"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="@+id/compstattext"
+        app:layout_constraintTop_toBottomOf="@+id/comphptext" />
+
+    <SearchView
+        android:id="@+id/compsearchView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="260dp"
+        android:queryHint="name/id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/comphpbar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/compstattext1" />
+
+    <ProgressBar
+        android:id="@+id/compatkbar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/comphpbar1" />
+
+    <ProgressBar
+        android:id="@+id/compdfcbar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/compatkbar1" />
+
+    <ProgressBar
+        android:id="@+id/compspcatkbar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/compdfcbar1" />
+
+    <ProgressBar
+        android:id="@+id/compspcdfcbar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/compspcatkbar1" />
+
+    <ProgressBar
+        android:id="@+id/compspdbar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="180dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:translationY="-140dp"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/compspcdfcbar1" />
+
+    <ImageView
+        android:id="@+id/compstattext1"
+        android:layout_width="195dp"
+        android:layout_height="289dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:scaleY="0.6"
+        android:src="@drawable/screenmaterialcorner"
+        android:translationY="-60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/comlcdpoke1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/comlcdpoke1"
+        android:layout_width="185dp"
+        android:layout_height="317dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/display"
+        android:translationY="-24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/comppokeName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/pokefont"
+        android:text="Loading..."
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="@+id/comlcdpoke1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/comppokeID1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/pokefont"
+        android:text="#000"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/comlcdpoke1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/comphptext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/pokefont"
+        android:text="hp"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/compdfctext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pokefont"
+        android:text="dfc"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/compatktext1" />
+
+    <TextView
+        android:id="@+id/compspcatktext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pokefont"
+        android:text="spcatk"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/compdfctext1" />
+
+    <TextView
+        android:id="@+id/compspcdfctext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pokefont"
+        android:text="spcdfc"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/compspcatktext1" />
+
+    <TextView
+        android:id="@+id/compspd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pokefont"
+        android:text="spd"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/compspcdfctext1" />
+
+    <TextView
+        android:id="@+id/compatktext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/pokefont"
+        android:text="atk"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/compstattext1"
+        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintStart_toStartOf="@+id/compstattext1"
+        app:layout_constraintTop_toBottomOf="@+id/comphptext1" />
+
+    <ImageView
+        android:id="@+id/dividercomp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/comlcdpoke1" />
+
+    <ImageView
+
+        android:id="@+id/compiv_result1"
+        android:layout_width="128dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/failedtoload"
+        app:layout_constraintEnd_toEndOf="@+id/comlcdpoke1"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/comlcdpoke1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+
+        android:id="@+id/compiv_result"
+        android:layout_width="128dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/failedtoload"
+        app:layout_constraintEnd_toEndOf="@+id/comlcdpoke"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/comlcdpoke"
+        app:layout_constraintTop_toTopOf="@+id/comlcdpoke" />
+
+    <SearchView
+        android:id="@+id/compsearchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="260dp"
+        android:queryHint="name/id"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/comlcdpoke">
+
+    </SearchView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

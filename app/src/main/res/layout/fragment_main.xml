@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/seila"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d00a0a"
+    tools:context=".Drawer">
+
+
+    <ImageView
+        android:id="@+id/topframe"
+        android:layout_width="1373dp"
+        android:layout_height="384dp"
+        android:translationY="-145dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/framesup" />
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="269dp"
+        android:layout_height="495dp"
+
+        android:layout_marginTop="64dp"
+        android:src="@drawable/display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pokeID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pokefont"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="40dp"
+        android:text="#000"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/pokeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pokefont"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginTop="88dp"
+        android:text="Loading..."
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+
+        android:id="@+id/iv_result"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="164dp"
+        android:src="@drawable/failedtoload"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/Shinybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/gold"
+        android:onClick="setShiny"
+        android:fontFamily="@font/pokefont"
+        android:text="Shiny"
+        android:textColor="@color/black"
+        android:translationY="-105dp"
+        app:layout_constraintEnd_toStartOf="@+id/Backbutton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/Backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/neon"
+        android:onClick="setBack"
+        android:text="Back"
+        android:fontFamily="@font/pokefont"
+        android:textColor="@color/black"
+        android:translationY="-105dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="358dp"
+        android:layout_height="177dp"
+        android:scaleX="1.3"
+        android:scaleY="0.8"
+        android:src="@drawable/screenmaterialcorner"
+        android:translationX="-45dp"
+        android:translationY="-80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Shinybutton" />
+
+    <TextView
+        android:id="@+id/habitatText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/pokefont"
+        android:text="TextView"
+        android:textSize="10dp"
+        android:translationY="-70dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/genderratio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:fontFamily="@font/pokefont"
+        android:textSize="10dp"
+        android:translationY="-70dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/habitatText" />
+
+    <TextView
+        android:id="@+id/alturatext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:fontFamily="@font/pokefont"
+        android:textSize="10dp"
+        android:translationY="-70dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genderratio" />
+
+    <TextView
+        android:id="@+id/pesotext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/pokefont"
+        android:text="TextView"
+        android:textSize="10dp"
+        android:translationY="-70dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturatext" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="206dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="140dp"
+        android:translationX="-75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:srcCompat="@drawable/ic_baseline_play_arrow_24" />
+
+    <Button
+        android:id="@+id/fetchbuttonLeft"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="leftgo"
+        android:translationX="-100dp"
+        android:translationY="-70dp"
+        app:icon="@drawable/ic_baseline_arrow_left_24"
+        app:iconPadding="0dp"
+        app:iconTint="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/Backbutton" />
+
+
+    <Button
+        android:id="@+id/fetchbuttonRight"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="go"
+        android:translationX="-100dp"
+        android:translationY="-70dp"
+        app:icon="@drawable/ic_baseline_arrow_right_24"
+        app:iconPadding="0dp"
+        app:iconTint="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/fetchbuttonLeft"
+        app:layout_constraintTop_toBottomOf="@+id/Backbutton" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:queryHint="nome/id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+
+        />
+
+    <ProgressBar
+        android:id="@+id/circprog"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="197dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="204dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:indeterminateTint="@color/gold"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
